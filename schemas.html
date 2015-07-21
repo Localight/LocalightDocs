@@ -1,0 +1,53 @@
+<h1>Schemas</h1>
+
+<h2>Users</h2>
+<div class="indentBlock" style="padding-left: 10px;">
+    name<br />
+    stripeCustomerId<br />
+    email<br />
+    phone<br />
+    password<br />
+    salt<br />
+    updated<br />
+    created<br />
+</div>
+
+<h2>Giftcards</h2>
+<div class="indentBlock" style="padding-left: 10px;">
+    fromId -> users._id<br />
+    toId -> users._id<br />
+    amount<br />
+    iconId<br />
+    message<br />
+    created<br />
+    stripeCardToken<br />
+</div>
+
+<h2>Locations</h2>
+<div class="indentBlock" style="padding-left: 10px;">
+    name<br />
+    address1<br />
+    address2<br />
+    city<br />
+    state<br />
+    zipcode<br />
+    ownerId -> owners._id<br />
+</div>
+
+<h2>Owners</h2>
+<div class="indentBlock" style="padding-left: 10px;">
+    name<br />
+    stripeCustomerId<br />
+    email<br />
+    password<br />
+    salt<br />
+    updated<br />
+    created<br />
+</div>
+
+<h2>Sessions</h2>
+<div class="indentBlock" style="padding-left: 10px;">
+    accountId -> (users._id || owners._id)<br />
+    type<br />
+    token<br />
+</div>
