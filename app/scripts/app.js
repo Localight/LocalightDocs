@@ -29,8 +29,8 @@ angular
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/gitcards', {
-        templateUrl: 'views/gitcards.html',
+      .when('/giftcards', {
+        templateUrl: 'views/giftcards.html',
         controller: 'GitcardsCtrl',
         controllerAs: 'gitcards'
       })
