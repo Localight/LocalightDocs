@@ -49,6 +49,11 @@ angular
         controller: 'UsersCtrl',
         controllerAs: 'users'
       })
+      .when('/routesPage', {
+        templateUrl: 'views/routespage.html',
+        controller: 'RoutespageCtrl',
+        controllerAs: 'routesPage'
+      })
       .otherwise({
         redirectTo: '/'
       });
