@@ -1,0 +1,82 @@
+<h2><b>Users Route</b></h2>
+
+<h4><b>/users</b></h4>
+
+<div class="indentBlock">
+    <b>Get</b>{<br />
+        <div class="indentBlock">
+        "sessionToken" : "String",<br />
+        </div>
+    }
+</div>
+
+<div class="indentBlock">
+    <b>Put</b>{<br />
+        <div class="indentBlock">
+            "sessionToken" : "String",<br />
+            "name" : "String",<br />
+            "stripeCustomerId" : "String",<br />
+            "email" : "String",<br />
+            "phone" : "String",<br />
+            "password" : "String",<br />
+        </div>
+    }
+</div>
+
+<div class="indentBlock">
+    <b>Delete</b>{<br />
+        <div class="indentBlock">
+        "sessionToken" : "String",<br />
+        </div>
+    }
+</div>
+
+<div class="indentBlock">
+    <h4><b>/join</b></h4>
+    <div class="indentBlock">
+        <b>Post</b>{<br />
+            <div class="indentBlock">
+            "name" : "String",<br />
+            "stripeCustomerId" : "String",<br />
+            "email" : "String",<br />
+            "phone" : "String",<br />
+            "password" : "String",<br />
+            </div>
+        }
+    </div>
+</div>
+
+<div class="indentBlock">
+    <h4><b>/login</b></h4>
+    <div class="indentBlock">
+        <b>Post</b>{<br />
+            <div class="indentBlock">
+            "phone" : "String",<br />
+            "password" : "String",<br />
+            </div>
+        }
+    </div>
+</div>
+
+<div class="indentBlock">
+    <h4><b>/twilio</b></h4>
+    <div class="indentBlock">
+        <b>Post</b>{<br />
+            <div class="indentBlock">
+            "phone" : "String",<br />
+            </div>
+        }
+    </div>
+</div>
+
+<div class="indentBlock">
+    <h4><b>/reset</b></h4>
+    <div class="indentBlock">
+        <b>Post</b>{<br />
+            <div class="indentBlock">
+            "email" : "String",<br />
+            "phone" : "String",<br />
+            </div>
+        }
+    </div>
+</div>
