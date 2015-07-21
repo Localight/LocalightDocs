@@ -49,8 +49,8 @@ angular
         controller: 'UsersCtrl',
         controllerAs: 'users'
       })
-      .when('/routesPage', {
-        templateUrl: 'views/routespage.html',
+      .when('/routes', {
+        templateUrl: 'views/routes.html',
         controller: 'RoutespageCtrl',
         controllerAs: 'routesPage'
       })
