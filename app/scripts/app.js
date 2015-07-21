@@ -44,6 +44,11 @@ angular
         controller: 'OwnersCtrl',
         controllerAs: 'owners'
       })
+      .when('/users', {
+        templateUrl: 'views/users.html',
+        controller: 'UsersCtrl',
+        controllerAs: 'users'
+      })
       .otherwise({
         redirectTo: '/'
       });
