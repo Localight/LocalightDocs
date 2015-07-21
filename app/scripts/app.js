@@ -34,6 +34,11 @@ angular
         controller: 'GitcardsCtrl',
         controllerAs: 'gitcards'
       })
+      .when('/locations', {
+        templateUrl: 'views/locations.html',
+        controller: 'LocationsCtrl',
+        controllerAs: 'locations'
+      })
       .otherwise({
         redirectTo: '/'
       });
