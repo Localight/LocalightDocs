@@ -31,8 +31,8 @@ angular
       })
       .when('/giftcards', {
         templateUrl: 'views/giftcards.html',
-        controller: 'GitcardsCtrl',
-        controllerAs: 'gitcards'
+        controller: 'GiftcardsCtrl',
+        controllerAs: 'giftcards'
       })
       .when('/locations', {
         templateUrl: 'views/locations.html',

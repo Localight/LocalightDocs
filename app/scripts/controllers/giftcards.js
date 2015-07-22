@@ -8,7 +8,7 @@
  * Controller of the localAngularDocsApp
  */
 angular.module('localAngularDocsApp')
-  .controller('GiftcardsCtrl', function () {
+  .controller('GitcardsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
