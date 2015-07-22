@@ -5,7 +5,7 @@
     name<br />
     stripeCustomerId<br />
     email<br />
-    phone<br />
+    phone - required<br />
     password<br />
     salt<br />
     updated<br />
@@ -14,33 +14,33 @@
 
 <h2>Giftcards</h2>
 <div class="indentBlock">
-    fromId -> users._id<br />
-    toId -> users._id<br />
-    amount<br />
+    fromId -> users._id - required<br />
+    toId -> users._id - required<br />
+    amount - required<br />
     iconId<br />
     message<br />
     created<br />
-    stripeCardToken<br />
+    stripeCardToken - required<br />
 </div>
 
 <h2>Locations</h2>
 <div class="indentBlock">
-    name<br />
-    address1<br />
+    name - required<br />
+    address1 - required<br />
     address2<br />
     city<br />
     state<br />
     zipcode<br />
-    ownerId -> owners._id<br />
+    ownerId -> owners._id - required<br />
 </div>
 
 <h2>Owners</h2>
 <div class="indentBlock">
-    name<br />
-    stripeCustomerId<br />
-    email<br />
-    password<br />
-    salt<br />
+    name - required<br />
+    stripeCustomerId - required<br />
+    email - required<br />
+    password - required<br />
+    salt - required<br />
     updated<br />
     created<br />
 </div>
