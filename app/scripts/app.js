@@ -54,7 +54,7 @@ angular
         controller: 'RoutespageCtrl',
         controllerAs: 'routesPage'
       })
-      .when('/triconCodes', {
+      .when('/triconcodes', {
         templateUrl: 'views/triconcodes.html',
         controller: 'TriconcodesCtrl',
         controllerAs: 'triconCodes'
