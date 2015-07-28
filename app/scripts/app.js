@@ -54,6 +54,11 @@ angular
         controller: 'RoutespageCtrl',
         controllerAs: 'routesPage'
       })
+      .when('/triconCodes', {
+        templateUrl: 'views/triconcodes.html',
+        controller: 'TriconcodesCtrl',
+        controllerAs: 'triconCodes'
+      })
       .otherwise({
         redirectTo: '/'
       });
