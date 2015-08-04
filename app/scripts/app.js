@@ -59,6 +59,11 @@ angular
         controller: 'TriconcodesCtrl',
         controllerAs: 'triconCodes'
       })
+      .when('/ngrok', {
+        templateUrl: 'views/ngrok.html',
+        controller: 'NgrokCtrl',
+        controllerAs: 'ngrok'
+      })
       .otherwise({
         redirectTo: '/'
       });
