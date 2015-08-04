@@ -2,13 +2,13 @@
 
 /**
  * @ngdoc function
- * @name localAngularDocsApp.controller:GitcardsCtrl
+ * @name localAngularDocsApp.controller:DocsCtrl
  * @description
- * # GitcardsCtrl
+ * # DocsCtrl
  * Controller of the localAngularDocsApp
  */
 angular.module('localAngularDocsApp')
-  .controller('GiftcardsCtrl', function () {
+  .controller('DocsCtrl', function () {
     this.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',

@@ -24,45 +24,55 @@ angular
         controller: 'MainCtrl',
         controllerAs: 'main'
       })
-      .when('/schemas', {
-        templateUrl: 'views/schemas.html',
+      .when('/docs/schemas', {
+        templateUrl: 'views/docs/schemas.html',
         controller: 'AboutCtrl',
         controllerAs: 'about'
       })
-      .when('/giftcards', {
-        templateUrl: 'views/giftcards.html',
+      .when('/docs/routes/giftcards', {
+        templateUrl: 'views/docs/routes/giftcards.html',
         controller: 'GiftcardsCtrl',
         controllerAs: 'giftcards'
       })
-      .when('/locations', {
-        templateUrl: 'views/locations.html',
+      .when('/docs/routes/locations', {
+        templateUrl: 'views/docs/routes/locations.html',
         controller: 'LocationsCtrl',
         controllerAs: 'locations'
       })
-      .when('/owners', {
-        templateUrl: 'views/owners.html',
+      .when('/docs/routes/owners', {
+        templateUrl: 'views/docs/routes/owners.html',
         controller: 'OwnersCtrl',
         controllerAs: 'owners'
       })
-      .when('/users', {
-        templateUrl: 'views/users.html',
+      .when('/docs/routes/users', {
+        templateUrl: 'views/docs/routes/users.html',
         controller: 'UsersCtrl',
         controllerAs: 'users'
       })
-      .when('/routes', {
-        templateUrl: 'views/routes.html',
+      .when('/docs/routes', {
+        templateUrl: 'views/docs/routes/routes.html',
         controller: 'RoutespageCtrl',
         controllerAs: 'routesPage'
       })
-      .when('/triconcodes', {
-        templateUrl: 'views/triconcodes.html',
+      .when('/docs/triconcodes', {
+        templateUrl: 'views/docs/triconcodes.html',
         controller: 'TriconcodesCtrl',
         controllerAs: 'triconCodes'
       })
-      .when('/ngrok', {
-        templateUrl: 'views/ngrok.html',
+      .when('/manuals/ngrok', {
+        templateUrl: 'views/manuals/ngrok.html',
         controller: 'NgrokCtrl',
         controllerAs: 'ngrok'
+      })
+      .when('/docs', {
+        templateUrl: 'views/docs/docs.html',
+        controller: 'DocsCtrl',
+        controllerAs: 'docs'
+      })
+      .when('/manuals', {
+        templateUrl: 'views/manuals/manuals.html',
+        controller: 'ManualsCtrl',
+        controllerAs: 'manuals'
       })
       .otherwise({
         redirectTo: '/'
