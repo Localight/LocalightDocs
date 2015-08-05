@@ -1,1 +1,52 @@
-This page has not been written yet. Coming soon!
+<h2><b>Ngrok Setup Guide</b></h2>
+Setting up the magical ngrok<br /><br /><br />
+
+Steps:<br /><br />
+
+- Download ngrok: https://ngrok.com/<br />
+- Sign up for ngrok and get your auth token.<br />
+- Create a configuration file called ngrok.yml<br /><br />
+
+Put the following code in that file, replacing every ~~INSTRUCTION~~ with your own information. (do not leave these in the file)<br /><br />
+
+<div class="indentBlock">
+    authtoken: ~~Your authtoken~~<br />
+    http_proxy: "http://127.0.0.1:8888" ~~Include this line if you want to use charles~~<br />
+    tunnels:<br />
+    <div class="indentBlock">
+        ~~Tunnel name, such as juliantunnel~~:<br />
+        <div class="indentBlock">
+            proto: http<br />
+            addr: ~~Port of your grunt server~~
+        </div>
+    </div>
+</div>
+<br />
+
+Make sure that the file tabbed in correctly from copy/pasta!<br />
+
+I explain this file at the end of this document in more detail. For now, lets start the tunnel!<br /><br />
+
+Open your terminal, and enter the following command from the directory your ngrok is in:<br /><br />
+
+<div class="indentBlock">
+    "./ngrok start ~~tunnel name~~ --config /~~path to your config.yml~~"
+</div><br />
+
+You will now be able to access your localhost from tunnelname.ngrok.io (no port number).
+It will automatically be tunneled to your localhost, at the port you specified.<br /><br />
+
+Config.yml in greater detail:<br /><br />
+
+<div class="indentBlock">
+    <b>authtoken:</b> Specifies your authtoken with ngrok<br />
+    <b>http_proxy:</b> Directs ngrok through charles, if you so wish. Otherwise, ngrok will tunnel past charles.<br />
+    <b>tunnels:</b> You can define multiple tunnels here if you want.<br />
+    <div class="indentBlock">
+        tunnel name (also your url):<br />
+        <div class="indentBlock">
+            <b>protocol:</b> Tells ngrok to use http, instead of other types of web requests. Ngrok does it all!<br />
+            <b>addr:</b> Specifies the internal port of the development server you want ngrok to route to.
+        </div>
+    </div>
+</div>
