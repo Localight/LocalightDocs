@@ -6,17 +6,17 @@
     <div class="codeComment">//Create a giftcard</div>
     <b>POST</b>{<br />
         <div class="indentBlock">
-        "sessionToken" : "String",<br />
-        "toName" : "String", (recipient name)<br />
-        "fromName" : "String", (recipient name)<br />
-        "phone" : "String", (recipient phone, plain integer string)<br />
-        "email" : "String", (sender email)<br />
-        "amount" : "String", (0-50000 in cents)<br />
-        "iconId" : "String",<br />
-        "locationId" : "String",<br />
-        "message" : "String",<br />
-        "stripeCardToken" : "String",<br />
-        "sendDate" : "String" (optional)<br />
+        "sessionToken": "String",<br />
+        "toName": "String", (recipient name)<br />
+        "fromName": "String", (recipient name)<br />
+        "phone": "String", (recipient phone, plain integer string)<br />
+        "email": "String", (sender email)<br />
+        "amount": "String", (0-50000 in cents)<br />
+        "iconId": "String",<br />
+        "locationId": "String",<br />
+        "message": "String",<br />
+        "stripeCardToken": "String",<br />
+        "sendDate": "String" (optional)<br />
         </div>
     }
 </div>
@@ -26,7 +26,7 @@
     <div class="codeComment">//Get all giftcards</div>
     <b>GET</b>{<br />
         <div class="indentBlock">
-        "sessionToken" : "String",<br />
+        "sessionToken": "String",<br />
         </div>
     }
 </div>
@@ -38,7 +38,7 @@
     <div class="codeComment">//Get a giftcard</div>
     <b>GET</b>{<br />
         <div class="indentBlock">
-        "sessionToken" : "String",<br />
+        "sessionToken": "String",<br />
         </div>
     }
     <br />
@@ -47,9 +47,9 @@
     <div class="codeComment">//Update a giftcard - <warn>FUTURE</warn></div>
     <b>PUT</b>{<br />
         <div class="indentBlock">
-        "sessionToken" : "String",<br />
-        "iconId" : "String",<br />
-        "message" : "String",<br />
+        "sessionToken": "String",<br />
+        "iconId": "String",<br />
+        "message": "String",<br />
         </div>
     }
 </div>
@@ -60,8 +60,8 @@
     <div class="codeComment">//Save giftcard for later and send email link</div>
     <b>POST</b>{<br />
         <div class="indentBlock">
-        "sessionToken" : "String",<br />
-        "giftcardId" : "String" (user must already have an email associated with acct)<br />
+        "sessionToken": "String",<br />
+        "giftcardId": "String" (user must already have an email associated with acct)<br />
         </div>
     }<br />
 </div>
