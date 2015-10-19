@@ -3,38 +3,49 @@
 <h4><b>/giftcards</b></h4>
 
 <div class="indentBlock">
-    <b>Post</b>{<br />
+    <div class="codeComment">//Create a giftcard</div>
+    <b>POST</b>{<br />
         <div class="indentBlock">
         "sessionToken" : "String",<br />
-        "name" : "String", (recipient name)<br />
-        "phone" : "String", (recipient phone)<br />
-        "amount" : "String",<br />
+        "toName" : "String", (recipient name)<br />
+        "fromName" : "String", (recipient name)<br />
+        "phone" : "String", (recipient phone, plain integer string)<br />
+        "email" : "String", (sender email)<br />
+        "amount" : "String", (0-50000 in cents)<br />
         "iconId" : "String",<br />
+        "locationId" : "String",<br />
         "message" : "String",<br />
         "stripeCardToken" : "String",<br />
-        "sendDate" : "String",<br />
+        "sendDate" : "String" (optional)<br />
         </div>
     }
 </div>
+<br />
 
 <div class="indentBlock">
-    <b>Get</b>{<br />
+    <div class="codeComment">//Get all giftcards</div>
+    <b>GET</b>{<br />
         <div class="indentBlock">
         "sessionToken" : "String",<br />
         </div>
     }
 </div>
+<br />
 
+<div class="codeComment">//Individual giftcard operations</div>
+<h4><b>/giftcards/:id</b></h4>
 <div class="indentBlock">
-<h4><b>/:id</b></h4>
-<div class="indentBlock">
-    <b>Get</b>{<br />
+    <div class="codeComment">//Get a giftcard</div>
+    <b>GET</b>{<br />
         <div class="indentBlock">
         "sessionToken" : "String",<br />
         </div>
-    }<br />
+    }
+    <br />
+    <br />
 
-    <b>Put</b>{<br />
+    <div class="codeComment">//Update a giftcard - <warn class="warn">FUTURE</warn></div>
+    <b>PUT</b>{<br />
         <div class="indentBlock">
         "sessionToken" : "String",<br />
         "iconId" : "String",<br />
@@ -42,4 +53,15 @@
         </div>
     }
 </div>
+<br />
+
+<h4><b>/giftcards/later</b></h4>
+<div class="indentBlock">
+    <div class="codeComment">//Save giftcard for later and send email link</div>
+    <b>POST</b>{<br />
+        <div class="indentBlock">
+        "sessionToken" : "String",<br />
+        "giftcardId" : "String" (user must already have an email associated with acct)<br />
+        </div>
+    }<br />
 </div>
