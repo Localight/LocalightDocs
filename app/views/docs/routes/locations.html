@@ -3,67 +3,98 @@
 <h4><b>/locations</b></h4>
 
 <div class="indentBlock">
-    <b>Post</b>{<br />
+    <div class="codeComment">//Create a location</div>
+    <b>POST</b>{<br />
         <div class="indentBlock">
-        "name" : "String",<br />
-        "triconKey" : "String",<br />
-        "address1" : "String",<br />
-        "address2" : "String",<br />
-        "city" : "String",<br />
-        "state" : "String",<br />
-        "zipcode" : "String",<br />
-        "sessionToken" : "String",<br />
+        "name": "String",<br />
+        "triconKey": "String",<br />
+        "address1": "String",<br />
+        "address2": "String", (optional)<br />
+        "city": "String",<br />
+        "state": "String",<br />
+        "zipcode": "String",<br />
+        "sessionToken": "String",<br />
         </div>
     }
 </div>
+<br />
 
 <div class="indentBlock">
-    <b>Get</b>{<br />
+    <div class="codeComment">//Get all locations</div>
+    <b>GET</b>{<br />
         <div class="indentBlock">
-        "sessionToken" : "String",<br />
+        no requirements<br />
         </div>
     }
 </div>
+<br />
 
+<h4><b>/locations/code</b></h4>
 <div class="indentBlock">
-    <h4><b>/:id</b></h4>
-    <div class="indentBlock">
-        <b>Get</b>{<br />
-            <div class="indentBlock">
-            "sessionToken" : "String",<br />
-            </div>
-        }
-    </div>
-    <div class="indentBlock">
-        <b>Put</b>{<br />
-            <div class="indentBlock">
-            "name" : "String",<br />
-            "address1" : "String",<br />
-            "address2" : "String",<br />
-            "city" : "String",<br />
-            "state" : "String",<br />
-            "zipcode" : "String",<br />
-            "sessionToken" : "String",<br />
-            </div>
-        }
-    </div>
-    <div class="indentBlock">
-        <b>Delete</b>{<br />
-            <div class="indentBlock">
-            "sessionToken" : "String",<br />
-            </div>
-        }
-    </div>
-    <div class="indentBlock">
-        <h4><b>/spend</b></h4>
+    <div class="codeComment">//Get a location by code</div>
+    <b>GET</b>{<br />
         <div class="indentBlock">
-            <b>Post</b>{<br />
-                <div class="indentBlock">
-                "sessionToken" : "String",<br />
-                "amount" : "Int",<br />
-                "triconKey" : "String",<br />
-                </div>
-            }
+        "code": String,<br />
         </div>
-    </div>
+    }
 </div>
+<br />
+
+<h4><b>/locations/:id</b></h4>
+<div class="indentBlock">
+    <div class="codeComment">//Get a location</div>
+    <b>GET</b>{<br />
+        <div class="indentBlock">
+        no requirements<br />
+        </div>
+    }
+</div>
+<br />
+<div class="indentBlock">
+    <div class="codeComment">//Update a location</div>
+    <b>PUT</b>{<br />
+        <div class="indentBlock">
+        "name": "String", (optional)<br />
+        "address1": "String", (optional)<br />
+        "address2": "String", (optional)<br />
+        "city": "String" (optional),<br />
+        "state": "String", (optional)<br />
+        "zipcode": "String", (optional)<br />
+        "triconKey": "String", (optional)<br />
+        "sessionToken": "String",<br />
+        </div>
+    }
+</div>
+<br />
+<div class="indentBlock">
+    <div class="codeComment">//Delete a location - <warn>UNFINISHED</warn></div>
+    <b>DELETE</b>{<br />
+        <div class="indentBlock">
+        "sessionToken": "String",<br />
+        </div>
+    }
+</div>
+<br />
+
+<h4><b>/locations/:id/spend</b></h4>
+<div class="indentBlock">
+    <div class="codeComment">//Spend giftcard at a location</div>
+    <b>POST</b>{<br />
+        <div class="indentBlock">
+        "sessionToken": "String",<br />
+        "amount": "Int",<br />
+        "triconKey": "String",<br />
+        </div>
+    }
+</div>
+<br />
+<h4><b>/locations/owner/:id</b></h4>
+<div class="indentBlock">
+    <div class="codeComment">//Get locations for owner</div>
+    <b>GET</b>{<br />
+        <div class="indentBlock">
+        no requirements<br />
+        </div>
+    }
+</div>
+<br />
